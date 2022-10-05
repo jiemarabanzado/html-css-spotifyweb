@@ -35,6 +35,7 @@ header{
     right: 0px;
     left: 240px;
     background-color: rgb(8,11,18, 0.5);
+    z-index: 1;
 }
 .head-btn{
     padding: 15px 40px;
@@ -136,6 +137,9 @@ aside{
     color: #717171;
     height: 1px;
 }
+#install:hover{
+    color: white;
+}
 .profile{
     margin-bottom: 5px;
 }
@@ -158,8 +162,12 @@ aside{
 }
 .download{
     margin-bottom: 1px;
+    align-items: center;
 }
 .download-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
     margin-right: 10px;
 }
@@ -171,8 +179,107 @@ main{
     overflow-y: auto;
     width: calc(100% - 240px);
 }
-
-
+.main-nav{
+    max-width:650px;
+    margin: auto;
+    padding-top: 90px;
+}
+.main-nav ul{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.main-nav li{
+    list-style: none;
+    margin:10px;
+}
+.main-nav ul li a{
+    color: #717171;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.main-nav ul li a:hover {
+    color: white;
+}
+.recently{
+    color: white;
+    margin-bottom: 20px;
+}
+.main-container{
+    max-width: calc(100% - 40px);
+    margin: auto;
+}
+.song-grid{
+    max-width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.song-cover{
+    position: relative;
+}
+.play{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-size: 2em;
+    z-index: 1;
+    height: inherit;
+    display: none;
+}
+.song-card{
+    width: calc(100%/6 - 30px);
+    margin-bottom: 10px;
+}
+.song-cover img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.song-card h3{
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+.artist{
+    color: #717171;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.under-title{
+    color: #717171;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+.for-you{
+    margin-bottom: 30px;
+}
+.for-you .recently{
+    margin-bottom: 5px;
+}
+.for-me .song-card{
+    margin-right: 30px;
+}
+.album:hover{
+    filter: opacity(.5);
+}
+.album:hover + .play{
+    display: flex;
+}
+.popular .recently{
+    margin-bottom:5px;
+}
+.circle{
+    border-radius: 50%;
+    object-fit: cover;
+}
 /*-------------
 ----footer-------
 --------------*/
@@ -188,6 +295,40 @@ footer{
 
 /*---------------
 ------media query dell'aside*/
+@media screen and (max-width:1101px){
+    .song-grid{
+        width: 100%;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .song-card{
+        width: calc(100%/4 - 30px);
+        margin-right: 30px;
+        
+    }
+}    
+ @media screen and (max-width:701px){
+        .song-grid{
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .song-card{
+            width: calc(100%/2 - 10px);
+            margin-right: 0px;
+        }
+        .for-me{
+            justify-content: space-between;
+        }
+        .for-me .song-card{
+            margin-right: 0px;
+        }
+         
+
+
+
+    }
+
 @media screen and (max-width:601px) {
     header{
         left: 50px;
