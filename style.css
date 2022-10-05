@@ -43,6 +43,9 @@ header{
     border: 1px solid white;
     border-radius: 30px;
 }
+.head-btn:hover{
+    transform: scale(1.03);
+}
 /*------------------
 ------- aside--------
 ------------------*/
@@ -50,13 +53,71 @@ aside{
     width: 240px;
     padding: 20px;
     background-color: black;
+    padding-bottom: 0px;
+}
+.logo{
+    margin-bottom: 20px;
 }
 .logo img{
     height: 40px;
 }
+.aside-nav{
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.logo-nav{
+    width: 25px;
+}
 
-
-
+.right-nav{
+    color: #717171;
+    width: 83%;
+    justify-content: space-between;
+    align-self: center;
+}
+.right-nav:hover{
+    color: white;
+}
+.playlist h4{
+    color: white;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+.plus{
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: #a3a3a3;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.playlist h5{
+    color: #717171;
+    align-self: center;
+    font-size: 1.0rem;
+}
+.add{
+    margin-bottom: 15px;
+}
+.add:hover .plus{
+    background-color: white;
+}
+.add:hover h5{
+    color: white;
+}
+.new-play h5{
+    margin-bottom: 15px;
+}
+.new-play h5:hover{
+    color: white;
+}
+.aside-foot{
+    height :50px;
+    background-color: #717171;
+}
 /*----------------
 -------main-----
 --------------*/
