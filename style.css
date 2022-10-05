@@ -7,9 +7,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-body{
-    background-color: pink;
-}
 /*---------------
 ------common----
 ---------------*/
@@ -19,12 +16,6 @@ body{
 .container{
     height: calc(100vh - 90px);
 }
-
-
-
-
-
-
 /*-----------------
 ---------header---
 ----------------*/
@@ -84,6 +75,7 @@ aside{
 }
 .right-nav:hover{
     color: white;
+    cursor: pointer;
 }
 .playlist h4{
     color: white;
@@ -114,12 +106,14 @@ aside{
 }
 .add:hover h5{
     color: white;
+    cursor: pointer;
 }
 .new-play h5{
     margin-bottom: 15px;
 }
 .new-play h5:hover{
     color: white;
+    cursor: pointer;
 }
 .aside-foot{
     position: absolute;
@@ -139,6 +133,7 @@ aside{
 }
 #install:hover{
     color: white;
+    cursor: pointer;
 }
 .profile{
     margin-bottom: 5px;
