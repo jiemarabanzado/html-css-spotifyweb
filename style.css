@@ -10,3 +10,56 @@
 body{
     background-color: pink;
 }
+/*---------------
+------common----
+---------------*/
+.row{
+    display: flex;
+}
+.container{
+    height: calc(100vh - 90px);
+}
+
+
+
+
+
+
+/*-----------------
+---------header---
+----------------*/
+header{
+    position: fixed;
+    text-align: right;
+    padding: 15px 10px;
+    right: 0px;
+    left: 240px;
+    background-color: rgb(8,11,18, 0.5);
+}
+.head-btn{
+    padding: 15px 40px;
+    color: white;
+    background-color: rgb(8,11,18, 0);
+    border: 1px solid white;
+    border-radius: 30px;
+}
+/*------------------
+------- aside--------
+------------------*/
+aside{
+    width: 240px;
+    background-color: red;
+}
+
+
+
+
+
+/*----------------
+-------main-----
+--------------*/
+main{
+    background-color: rgb(38, 125, 11);
+    overflow-y: auto;
+    width: calc(100% - 240px);
+}
