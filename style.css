@@ -48,10 +48,12 @@ header{
 ------------------*/
 aside{
     width: 240px;
-    background-color: red;
+    padding: 20px;
+    background-color: black;
 }
-
-
+.logo img{
+    height: 40px;
+}
 
 
 
@@ -59,7 +61,20 @@ aside{
 -------main-----
 --------------*/
 main{
-    background-color: rgb(38, 125, 11);
+    background-color: #141922;
     overflow-y: auto;
     width: calc(100% - 240px);
+}
+
+
+/*-------------
+----footer-------
+--------------*/
+footer{
+    height: 90px;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
