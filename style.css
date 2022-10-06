@@ -285,31 +285,68 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
-    padding: 0px;
+    padding: 10px 0px;
+}
+.player{
+    justify-content: space-between;
 }
 .track{
-    max-width: 15%;
-    background-color: aqua;
-    height: 70px;
+    max-width: 240px;
     padding: 10px 10px;
+    align-items: center;
 }
 .track-image{
     width: 20%;
+    margin-right: 10px;
 }
 .track-image img{
     width: 100%;
 }
+.track-title{
+    margin-right: 35px;
+}
+.track-title h3{
+    width: 60%;
+    font-size: 0.8rem;
+    color: white;
+}
+.track-title .artist{
+    font-size: 0.6rem;
+    text-align: left;
+}
+.save-icon{
+    font-size: 1.3rem;
+    color: #717171;
+    margin-right: 10px;
+}
 .slider{
-    width: 70%;
-    background-color: pink;
+    width: 600px;
     height: 70px;
 }
 .output{
-    width: 15%;
+    width: 240px;
     background-color: blue;
     height: 70px;
 }
-
+.time-control{
+    max-width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.skip{
+    list-style: none;
+    align-items: center;
+}
+.skip li{
+    font-size: 1.2rem;
+    margin: 0px 10px;
+    color: white;
+}
+.skip li:nth-child(3){
+    font-size: 1.8rem;
+    margin: 0px 20px;
+}
 /*---------------
 ------media query dell'aside*/
 @media screen and (max-width:1101px){
