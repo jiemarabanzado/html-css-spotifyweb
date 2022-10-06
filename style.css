@@ -285,8 +285,30 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
+    padding: 0px;
 }
-
+.track{
+    max-width: 15%;
+    background-color: aqua;
+    height: 70px;
+    padding: 10px 10px;
+}
+.track-image{
+    width: 20%;
+}
+.track-image img{
+    width: 100%;
+}
+.slider{
+    width: 70%;
+    background-color: pink;
+    height: 70px;
+}
+.output{
+    width: 15%;
+    background-color: blue;
+    height: 70px;
+}
 
 /*---------------
 ------media query dell'aside*/
