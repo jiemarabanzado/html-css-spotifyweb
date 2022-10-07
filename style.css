@@ -47,6 +47,8 @@ aside{
     background-color: black;
     padding-bottom: 0px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .logo{
     margin-bottom: 20px;
@@ -115,22 +117,31 @@ aside{
     color: white;
     cursor: pointer;
 }
-.aside-foot{
+/*.aside-foot{
     position: absolute;
     bottom: 0;
     right: 20px;
     left: 20px;
     background-color: black;
     
-}
-.aside-foot h5{
+}*/
+.new-play{
     color: #717171;
+}
+.aside-scroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.new-play{
+    flex-grow: 1;
 }
 .aside-foot hr{
     margin-bottom: 10px;
     color: #717171;
     height: 1px;
 }
+
 #install:hover{
     color: white;
     cursor: pointer;
