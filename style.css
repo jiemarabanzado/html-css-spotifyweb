@@ -347,6 +347,35 @@ footer{
     font-size: 1.8rem;
     margin: 0px 20px;
 }
+.time{
+    height: 13px;
+    justify-content: space-between;
+}
+.time-control{
+    margin-bottom: 10px;
+}
+.bar{
+    width: calc(100% - 80px);
+    margin: auto;
+    height: 7px;
+    border: none;
+}
+.left-bar{
+    width: 20%;
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+.right-bar{
+    width:80%;
+    background-color: #5a5a5a;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius: 5px;
+}
+.current{
+    color: white;
+    font-size: 0.8rem;
+    width: 30px;
+}
 /*---------------
 ------media query dell'aside*/
 @media screen and (max-width:1101px){
